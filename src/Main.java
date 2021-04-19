@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int startBalance = 100;
+        int bonusPercent;
+        int refill = 1100;
+        if (refill >= 1001) {
+            bonusPercent = 1;
+        } else {
+            bonusPercent = 0;
+        }
+        int totalBalance = startBalance + refill + refill * bonusPercent / 100;
+        System.out.println(totalBalance);
+    }
+}
